@@ -58,6 +58,7 @@ namespace DNWS
             //sb.Append("PM25 : " + pm25reading.data.iaqi.pm25.v + "<br />");
             //sb.Append("PM10 : " + pm25reading.data.iaqi.pm10.v + "<br />");
             //sb.Append("</body></html>");
+            // Dont need them I guess
             string pm25 = JsonSerializer.Serialize(pm25reading);
             response.body = Encoding.UTF8.GetBytes(pm25);
             response.type = "application/json";
